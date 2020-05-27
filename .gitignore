@@ -1,3 +1,9 @@
+# Exclude maven directory
 target/
+
+# Exclude experiment directory
 experiment/
 
+# Exclude manual experiment outputs
+*.class
+*.jar
