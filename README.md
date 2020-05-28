@@ -64,3 +64,10 @@ Trying to load...
 ...jar_1.ClassInJar1...
 Loaded
 ```
+
+# Mitigation
+
+All JAR files, including the automated build, are working if used with the command line:
+```shell script
+$ java -cp "experiment/AutomatedBuild.jar:experiment/lib/jar_1.jar" exe.MyMain
+```

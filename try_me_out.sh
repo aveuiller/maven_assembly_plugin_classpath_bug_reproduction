@@ -14,6 +14,8 @@ echo "|Testing jar build consistency|"
 echo "=============================="
 echo ""
 
+rm -f $EXPERIMENT_DIR/*.jar
+
 echo "Manually building & executing"
 echo "-----------------------------"
 run_experiment "run_manual.sh"
@@ -21,7 +23,7 @@ echo ""
 
 echo "Automatically building & executing"
 echo "----------------------------------"
-mvn package
+mvn clean package
 run_experiment "run_automated.sh"
 echo ""
 
@@ -31,5 +33,3 @@ run_experiment "run_extract_and_rebuild.sh"
 echo ""
 
 echo "Done."
-
-
