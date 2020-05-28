@@ -1,4 +1,5 @@
 #!/bin/bash
+# This script will build a jar from scratch depending on another jar file.
 # Heavily inspired from https://stackoverflow.com/questions/45361379/jre-not-using-classpath-specified-by-manifest-file-of-runnable-jar
 
 LOCAL_JAR=ManualBuild.jar
