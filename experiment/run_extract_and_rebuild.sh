@@ -1,6 +1,6 @@
 #!/bin/bash
-# This script will extract the previous jar and rebuild the exact same jar.
-# Then try the same command as before
+# This script will extract the jar from the automated experiment and rebuild the exact same jar.
+# Then try the same command to check the behavior.
 
 AUTO_JAR="AutomatedBuild.jar"
 LOCAL_JAR="Rebuilt.jar"
