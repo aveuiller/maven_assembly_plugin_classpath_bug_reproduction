@@ -11,15 +11,17 @@ public class MyMain {
 
         showClasspath(cl);
 
-        String qualifiedName = "fr.inria.sniffer.tracker.analysis.persistence.SmellCategory";
+        String qualifiedName = "jar_1.ClassInJar1";
         List<String> qualifiedNames = Collections.singletonList(qualifiedName);
         tryImports(cl, qualifiedNames);
     }
 
     private static void showClasspath(ClassLoader cl) {
         URL[] urls = ((URLClassLoader) cl).getURLs();
+
+        System.out.println("Configured classpath:");
         for (URL url : urls) {
-            System.out.println(url.getFile());
+            System.out.println("\t - " + url.getFile());
         }
         System.out.println("----------");
     }

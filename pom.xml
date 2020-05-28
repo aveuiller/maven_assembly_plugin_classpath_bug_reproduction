@@ -24,14 +24,17 @@
                             <mainClass>exe.MyMain</mainClass>
                         </manifest>
                         <manifestEntries>
-                            <Class-Path>analyzed.jar</Class-Path>
+                            <!-- This Class-Path setting depends on the manual_experiment/run.sh:LIBRARY_JAR variable -->
+                            <Class-Path>lib/jar_1.jar</Class-Path>
                         </manifestEntries>
                     </archive>
                 </configuration>
                 <executions>
                     <execution>
-                        <id>make-assembly</id> <!-- this is used for inheritance merges -->
-                        <phase>package</phase> <!-- bind to the packaging phase -->
+                        <id>make-assembly
+                        </id> <!-- this is used for inheritance merges -->
+                        <phase>package
+                        </phase> <!-- bind to the packaging phase -->
                         <goals>
                             <goal>single</goal>
                         </goals>

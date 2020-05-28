@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Class-Path: lib/jar_1.jar analyzed.jar
+Class-Path: lib/jar_1.jar
 Build-Jdk-Spec: 1.8
 Created-By: Maven Archiver 3.5.0
 Main-Class: exe.MyMain
